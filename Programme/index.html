@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recettes Fil Rouge</title>
+    </head>
+    <body>
+        <script src="./json/recipe.json"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/listObjects.js"></script>
+        <script src="./js/createObjects.js"></script>
+
+        <script>
+            //tabIngredients[5].changeValid();
+            tabIngredients[11].changeValid();
+            //tabIngredients[8].changeValid();
+            tabIngredients[12].changeValid();
+            //console.log(tabRecettes);
+            //console.log(tabIngredients);
+
+            searchRecipe();
+            console.log(tabRecettes);
+        </script>
+    </body>
 </html>
