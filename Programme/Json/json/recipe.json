@@ -1,0 +1,202 @@
+var recettes = [
+    {
+        "id": 1,
+        "nom": "GÂTEAU AUX POMMES",
+        "nombre": 6,
+        "temps": 20,
+        "image": "gateaupomme",
+        "ingredients": [
+            "oeufs",
+            "sucre",
+            "pommes",
+            "beurre",
+            "amandes",
+            "farine"
+        ],
+        "listes": {
+            "Principale": [
+                "2 belles pommes acidulées",
+                "4 oeufs",
+                "130 g de sucre",
+                "100 g de beurre fondu",
+                "120 g de farine à levure incorporée",
+                "2 cuillères à soupe de Calvados",
+                "120 g + 2 cuillères à soupe d'amandes éffilées"
+            ]
+        },
+        "preparations": {
+            "principale": [
+                "Eplucher les pommes, les couper en cubes, les mettre dans un cul de poule, verser le Calvados, mélanger, laisser en attente.",
+                "Casser les oeufs, séparer les blancs des jaunes.",
+                "Mettre les jaunes dans un cul de poule, verser le sucre, battre jusqu'au blanchiment.",
+                "Incorporer progressivement le beurre fondu puis la farine.",
+                "Joindre les 120 g d' amandes éffilées, mélanger.",
+                "Battre les blancs en neige, en incorporer 1 bonne cuillère à soupe à la préparation.",
+                "Intégrer le restant des blancs en neige à l'aide d'une maryse.",
+                "Prendre un moule à manqué en silicone de 24 cm de diamètre, verser une couche de pâte égaliser.",
+                "Garnir le dessus de la pâte d'une couche de cubes de pommes.",
+                "Remettre une couche de pâte, le restant des cubes de pommes puis les 2 cuillères à soupe d'amandes éffilées.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 30 minutes en surveillant la cuisson.",
+                "Vérifier la cuisson en enfonçant la lame de couteau qui doit ressortir sèche.",
+                "Laisser refroidir."
+            ],
+            "conseil": " le Calvados peut être remplacé par de l'eau de fleurs d'oranger."
+        }
+    },
+    {
+        "id": 2,
+        "nom": "COEURS AUX 2 CHOCOLATS",
+        "nombre": 8,
+        "temps": 30,
+        "image": "coeursaux2chocolats",
+        "ingredients": [
+            "oeufs",
+            "sucre",
+            "chocolat blanc",
+            "beurre",
+            "amandes"
+        ],
+        "listes": {
+            "Pâte à gateaux": [
+                "50 g de beurre",
+                "80 g de sucre glace",
+                "4 gros oeufs",
+                "60 g de poudre d'amandes",
+                "2 cuillères à soupe de cacao amer",
+                "1 pincée de sel"
+            ],
+            "Crème au chocolat blanc": [
+                "100 g de chocolat blanc",
+                "20 cl de crème liquide"
+            ]
+        },
+        "preparations": {
+            "Pâte à gâteaux": [
+                "Séparer les blancs des jaunes d'oeufs.",
+                "Couper le beurre en morceaux, les déposer dans un cul de poule ou le bol du robot, joindre le sucre glace, mélanger, ajouter les jaunes d'oeufs, la poudre d'amandes, le cacao, le sel, malaxer pour obtenir une pâte homogène.",
+                "Battre les blancs en neige, en incorporer une bonne cuillère à soupe à la pâte pour l'alléger, ajouter le restant, l'intégrer à l'aide d'une maryse en soulevant la masse.",
+                "Garnir 2 plaques en silicone de 8 empreintes en forme de coeurs.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire environ 15 minutes au bain-marie.",
+                "Démouler, laisser refroidir."
+            ],
+            "Crème au chocolat blanc": [
+                "Hacher le chocolat, le déposer dans un cul de poule.",
+                "Verser la crème dans une casserole, porter à ébullition, la verser en 3 fois sur le chocolat en battant énergiquement au fouet à main.",
+                "Laisser refroidir, couvrir le récipient, l'entreposer au réfrigérateur au moins 2 heures.",
+                "Après ce laps de temps; battre la crème au fouet électrique."
+            ],
+            "Montage ": "A l'aide d'un emporte-pièce en forme de coeur, creuser chaque coeur, remplir les cavités de crème au chocolat blanc.",
+            "Conseil": "ces petits coeurs sont très légers"
+        }
+    },
+    {
+        "id": 3,
+        "nom": "CRÊPES AUX POMMES, SAUCE AU CARAMEL AU BEURRE SALÉ",
+        "nombre": 12,
+        "temps": 30,
+        "image": "crepesauxpommessauceaucaramelaubeurresale",
+        "ingredients": ["oeufs", "sucre", "lait", "beurre", "farine", "pommes"],
+        "listes": {
+            "Pâte": [
+                "250 g de maïzéna",
+                "250 g de farine (type 45)",
+                "75 g de beurre (fondu et froid)",
+                "8 oeufs",
+                "2 cuillères à soupe de sucre",
+                "1 litre de lait",
+                "1 pincée de sel",
+                "4 cuillères à soupe de Calvados"
+            ],
+            "Garniture": [
+                "4 pommes",
+                "50 g de beurre",
+                "2 cuillères à soupe de sucre"
+            ],
+            "Sauce": [
+                "100 g de beurre salé",
+                "10 cuillères à soupe de cassonade",
+                "30 g de crème liquide"
+            ]
+        },
+        "preparations": {
+            "Pâte": [
+                "Verser la farine, la maïzéna dans le bol du robot, ajouter les oeufs l'un après l'autre en faisant tourner l'appareil au ralenti.",
+                "Lorsque la pâte est lisse incorporer le lait progressivement, ajouter le sucre, la pincée de sel, le beurre (fondu et froid), verser le calvados, couvrir le récipient, laisser reposer la pâte au moins 1 heure au frais."
+            ],
+            "Garniture": [
+                "Eplucher les pommes, les couper en tranches (8 mm environ).",
+                "Prendre une poêle, mettre le beurre à fondre, cuire les pommes sur feu doux (environ 15 minutes), saupoudrer de sucre à mi-cuisson."
+            ],
+            "Sauce": [
+                "Déposer le beurre coupé en morceaux dans une casserole,le faire fondre sur feu moyen, verser le sucre en mélangeant énergiquement, cuire environ 5 minutes.",
+                "Arrêter la cuisson, verser la crème (progressivement) en battant la préparation, la crème va épaissir tout en restant fluide, remettre sur le feu 3 minutes sans cesser de battre le mélange."
+            ],
+            "Montage ": "Au moment de servir : prendre une assiète, y déposer une crêpe, la garnir de quelques tranches de pomme, déposer 1 à 2 cuillères soupe de sauce et plier la crêpe. Tous les ingédients doivent être chauds ou tièdes",
+            "Conseil": "maintenir les ingrédients au chaud, chaque convive se servira selon son goût, vous pouvez servir ces crêpes avec du sorbet aux pommes (à la place, ou en lieu et place de la sauce)."
+        }
+    },
+    {
+        "id": 4,
+        "nom": "COMPOTE DE CERISES À LA CANNELLE",
+        "nombre": 4,
+        "temps": 30,
+        "image": "compotedecerisesalacannelle",
+        "ingredients": ["sucre", "cerises"],
+        "listes": {
+            "Principale": [
+                "1 kg de cerises",
+                "250 g de sucre semoule",
+                "1 pincée de cannelle en poudre"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver et dénoyauter les cerises.",
+                "Mettre les cerises dans un cul de poule, verser le sucre et la cannelle, mélanger, couvrir et laisser macérer pendant 1 heure.",
+                "Après ce laps de temps, mettre les cerises dans une casserole.",
+                "Porter à ébullition, réduire la température, laisser mijoter pendant 5 minutes.",
+                "Verser les cerises dans un compotier, mettre au frais."
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "nom": "FAR BRETON AUX CERISES",
+        "nombre": 6,
+        "temps": 30,
+        "image": "farbretonauxcerises",
+        "ingredients": [
+            "sucre",
+            "cerises",
+            "oeufs",
+            "farine",
+            "lait",
+            "beurre"
+        ],
+        "listes": {
+            "Principale": [
+                "600 g de cerises",
+                "5 œufs",
+                "250 g de farine",
+                "250 g de sucre",
+                "1/2 litre de lait",
+                "Quelques petits morceaux de beurre salé"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver et dénoyauter les cerises.",
+                "Dans un saladier mettre la farine, le sucre, ajouter les œufs l'un après l'autre.",
+                "Lorsque le mélange est homogène, tiédir le lait et l'incorporer doucement à la préparation.",
+                "Ajouter les cerises.",
+                "Beurrer un moule à gratin, verser la préparation dans le moule, parsemer de petits morceaux de beurre salé.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 45 minutes en surveillant la cuisson.",
+                "Se mange tiède ou froid."
+            ],
+            "Conseil": "On peut saupoudrer le far de sucre glace."
+        }
+    }
+]

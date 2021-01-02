@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .horizTranslate {
+                -moz-transition: transform 1s;
+                -webkit-transition: transform 1s;
+                -ms-transition: transform 1s;
+                -o-transition: transform 1s;
+                transition: transform 1s;
+            }
+        </style>
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div
+            class="min-h-screen bg-gray-300 py-6 flex flex-col justify-center sm:py-12"
+        >
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                    class="sm:-rotate-6 cards border border-opacity-50 absolute inset-0 bg-gray-50 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rounded-xl"
+                ></div>
+                <div
+                    class="sm:-rotate-12 cards border border-opacity-50 absolute inset-0 bg-gray-50 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rounded-xl"
+                ></div>
+                <div
+                    class="sm:rotate-6 cards border border-opacity-50 absolute inset-0 bg-gray-50 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rounded-xl"
+                ></div>
+                <div
+                    class="sm:rotate-2 cards border border-opacity-50 absolute inset-0 bg-gray-50 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rounded-xl"
+                >
+                    <div
+                        class="relative px-4 py-10 bg-gray-50 shadow-lg sm:rounded-xl sm:p-20"
+                    >
+                        <div class="max-w-md mx-auto">
+                            <div class="grid grid-cols-1">
+                                <div
+                                    class="place-self-center text-5xl mb-6 font-mono textBelow"
+                                >
+                                    Pommes
+                                </div>
+                            </div>
+                            <img
+                                class="imgBelow"
+                                src="./images/ingredients/pommes.jpg"
+                                alt=""
+                            />
+                            <div class="grid grid-cols-2 mt-5">
+                                <div class="place-self-center">
+                                    <img
+                                        src="./images/ingredients/sweep.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="place-self-center">
+                                    <img
+                                        src="./images/ingredients/keep.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="sm:-rotate-2 cardsI transform relative px-4 py-10 bg-gray-50 shadow-lg sm:rounded-xl sm:p-20"
+                >
+                    <div class="max-w-md mx-auto card">
+                        <div class="grid grid-cols-1">
+                            <div
+                                class="place-self-center text-5xl mb-6 font-mono textUp"
+                            >
+                                Fraises
+                            </div>
+                        </div>
+
+                        <img
+                            class="imgUp"
+                            src="./images/ingredients/fraises.jpg"
+                            alt=""
+                        />
+                        <div class="grid grid-cols-2 mt-5">
+                            <div class="place-self-center sweep">
+                                <img
+                                    src="./images/ingredients/sweep.png"
+                                    alt="sweep"
+                                />
+                            </div>
+                            <div class="place-self-center keep">
+                                <img
+                                    src="./images/ingredients/keep.png"
+                                    alt="keep"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./json/recipe.json"></script>
+        <script src="./js/function.js"></script>
+        <script src="./js/listObjects.js"></script>
+        <script src="./js/createObjects.js"></script>
+
+        <script>
+            var posRotate = [
+                "sm:rotate-6",
+                "sm:rotate-12",
+                "sm:-rotate-6",
+                "sm:-rotate-12",
+            ];
+            var posRotateCard = [
+                "sm:rotate-1",
+                "sm:rotate-2",
+                "sm:-rotate-1",
+                "sm:-rotate-2",
+            ];
+            var posCard = 0;
+
+            var cards = document.querySelectorAll(".cards");
+            var cardsI = document.querySelector(".cardsI");
+            var keep = document.querySelector(".keep");
+            keep.style.cursor = "pointer";
+            var sweep = document.querySelector(".sweep");
+            sweep.style.cursor = "pointer";
+
+            var textBelow = document.querySelector(".textBelow");
+            var imgBelow = document.querySelector(".imgBelow");
+            var textUp = document.querySelector(".textUp");
+            var imgUp = document.querySelector(".imgUp");
+
+            //positionnement des cartes superposées
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.zIndex = i + 1;
+            }
+            cardsI.style.zIndex = 10;
+
+            tabIngredients = randomize(tabIngredients);
+            possitioncard(posCard);
+
+            keep.addEventListener("click", function () {
+                tabIngredients[posCard].changeValid(true);
+                posCard++;
+                if (posCard == tabIngredients.length) {
+                    posCard = 0;
+                }
+                moveCard();
+            });
+
+            sweep.addEventListener("click", function () {
+                tabIngredients[posCard].changeValid(false);
+                posCard++;
+                if (posCard == tabIngredients.length) {
+                    posCard = 0;
+                }
+                moveCard();
+            });
+        </script>
+    </body>
+</html>
