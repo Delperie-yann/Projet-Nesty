@@ -1,0 +1,530 @@
+var repices = [
+    {
+        "id": 1,
+        "name": "GÂTEAU AUX POMMES",
+        "number": 6,
+        "time": 20,
+        "picture": "gateaupomme",
+        "ingredients": [
+            "oeufs",
+            "sucre",
+            "pommes",
+            "beurre",
+            "amandes",
+            "farine"
+        ],
+        "lists": {
+            "Principale": [
+                "2 belles pommes acidulées",
+                "4 oeufs",
+                "130 g de sucre",
+                "100 g de beurre fondu",
+                "120 g de farine à levure incorporée",
+                "2 cuillères à soupe de Calvados",
+                "120 g + 2 cuillères à soupe d'amandes éffilées"
+            ]
+        },
+        "preparations": {
+            "principale": [
+                "Eplucher les pommes, les couper en cubes, les mettre dans un cul de poule, verser le Calvados, mélanger, laisser en attente.",
+                "Casser les oeufs, séparer les blancs des jaunes.",
+                "Mettre les jaunes dans un cul de poule, verser le sucre, battre jusqu'au blanchiment.",
+                "Incorporer progressivement le beurre fondu puis la farine.",
+                "Joindre les 120 g d' amandes éffilées, mélanger.",
+                "Battre les blancs en neige, en incorporer 1 bonne cuillère à soupe à la préparation.",
+                "Intégrer le restant des blancs en neige à l'aide d'une maryse.",
+                "Prendre un moule à manqué en silicone de 24 cm de diamètre, verser une couche de pâte égaliser.",
+                "Garnir le dessus de la pâte d'une couche de cubes de pommes.",
+                "Remettre une couche de pâte, le restant des cubes de pommes puis les 2 cuillères à soupe d'amandes éffilées.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 30 minutes en surveillant la cuisson.",
+                "Vérifier la cuisson en enfonçant la lame de couteau qui doit ressortir sèche.",
+                "Laisser refroidir."
+            ],
+            "Conseil": " le Calvados peut être remplacé par de l'eau de fleurs d'oranger."
+        }
+    },
+    {
+        "id": 2,
+        "name": "COEURS AUX 2 CHOCOLATS",
+        "number": 8,
+        "time": 30,
+        "picture": "coeursaux2chocolats",
+        "ingredients": [
+            "oeufs",
+            "sucre",
+            "chocolat blanc",
+            "beurre",
+            "amandes"
+        ],
+        "lists": {
+            "Pâte à gateaux": [
+                "50 g de beurre",
+                "80 g de sucre glace",
+                "4 gros oeufs",
+                "60 g de poudre d'amandes",
+                "2 cuillères à soupe de cacao amer",
+                "1 pincée de sel"
+            ],
+            "Crème au chocolat blanc": [
+                "100 g de chocolat blanc",
+                "20 cl de crème liquide"
+            ]
+        },
+        "preparations": {
+            "Pâte à gâteaux": [
+                "Séparer les blancs des jaunes d'oeufs.",
+                "Couper le beurre en morceaux, les déposer dans un cul de poule ou le bol du robot, joindre le sucre glace, mélanger, ajouter les jaunes d'oeufs, la poudre d'amandes, le cacao, le sel, malaxer pour obtenir une pâte homogène.",
+                "Battre les blancs en neige, en incorporer une bonne cuillère à soupe à la pâte pour l'alléger, ajouter le restant, l'intégrer à l'aide d'une maryse en soulevant la masse.",
+                "Garnir 2 plaques en silicone de 8 empreintes en forme de coeurs.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire environ 15 minutes au bain-marie.",
+                "Démouler, laisser refroidir."
+            ],
+            "Crème au chocolat blanc": [
+                "Hacher le chocolat, le déposer dans un cul de poule.",
+                "Verser la crème dans une casserole, porter à ébullition, la verser en 3 fois sur le chocolat en battant énergiquement au fouet à main.",
+                "Laisser refroidir, couvrir le récipient, l'entreposer au réfrigérateur au moins 2 heures.",
+                "Après ce laps de temps; battre la crème au fouet électrique."
+            ],
+            "Montage ": "A l'aide d'un emporte-pièce en forme de coeur, creuser chaque coeur, remplir les cavités de crème au chocolat blanc.",
+            "Conseil": "ces petits coeurs sont très légers"
+        }
+    },
+    {
+        "id": 3,
+        "name": "CRÊPES AUX POMMES, SAUCE AU CARAMEL AU BEURRE SALÉ",
+        "number": 12,
+        "time": 30,
+        "picture": "crepesauxpommessauceaucaramelaubeurresale",
+        "ingredients": ["oeufs", "sucre", "lait", "beurre", "farine", "pommes"],
+        "lists": {
+            "Pâte": [
+                "250 g de maïzéna",
+                "250 g de farine (type 45)",
+                "75 g de beurre (fondu et froid)",
+                "8 oeufs",
+                "2 cuillères à soupe de sucre",
+                "1 litre de lait",
+                "1 pincée de sel",
+                "4 cuillères à soupe de Calvados"
+            ],
+            "Garniture": [
+                "4 pommes",
+                "50 g de beurre",
+                "2 cuillères à soupe de sucre"
+            ],
+            "Sauce": [
+                "100 g de beurre salé",
+                "10 cuillères à soupe de cassonade",
+                "30 g de crème liquide"
+            ]
+        },
+        "preparations": {
+            "Pâte": [
+                "Verser la farine, la maïzéna dans le bol du robot, ajouter les oeufs l'un après l'autre en faisant tourner l'appareil au ralenti.",
+                "Lorsque la pâte est lisse incorporer le lait progressivement, ajouter le sucre, la pincée de sel, le beurre (fondu et froid), verser le calvados, couvrir le récipient, laisser reposer la pâte au moins 1 heure au frais."
+            ],
+            "Garniture": [
+                "Eplucher les pommes, les couper en tranches (8 mm environ).",
+                "Prendre une poêle, mettre le beurre à fondre, cuire les pommes sur feu doux (environ 15 minutes), saupoudrer de sucre à mi-cuisson."
+            ],
+            "Sauce": [
+                "Déposer le beurre coupé en morceaux dans une casserole,le faire fondre sur feu moyen, verser le sucre en mélangeant énergiquement, cuire environ 5 minutes.",
+                "Arrêter la cuisson, verser la crème (progressivement) en battant la préparation, la crème va épaissir tout en restant fluide, remettre sur le feu 3 minutes sans cesser de battre le mélange."
+            ],
+            "Montage ": "Au moment de servir : prendre une assiète, y déposer une crêpe, la garnir de quelques tranches de pomme, déposer 1 à 2 cuillères soupe de sauce et plier la crêpe. Tous les ingédients doivent être chauds ou tièdes",
+            "Conseil": "maintenir les ingrédients au chaud, chaque convive se servira selon son goût, vous pouvez servir ces crêpes avec du sorbet aux pommes (à la place, ou en lieu et place de la sauce)."
+        }
+    },
+    {
+        "id": 4,
+        "name": "COMPOTE DE CERISES À LA CANNELLE",
+        "number": 4,
+        "time": 30,
+        "picture": "compotedecerisesalacannelle",
+        "ingredients": ["sucre", "cerises"],
+        "lists": {
+            "Principale": [
+                "1 kg de cerises",
+                "250 g de sucre semoule",
+                "1 pincée de cannelle en poudre"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver et dénoyauter les cerises.",
+                "Mettre les cerises dans un cul de poule, verser le sucre et la cannelle, mélanger, couvrir et laisser macérer pendant 1 heure.",
+                "Après ce laps de temps, mettre les cerises dans une casserole.",
+                "Porter à ébullition, réduire la température, laisser mijoter pendant 5 minutes.",
+                "Verser les cerises dans un compotier, mettre au frais."
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "FAR BRETON AUX CERISES",
+        "number": 6,
+        "time": 30,
+        "picture": "farbretonauxcerises",
+        "ingredients": [
+            "sucre",
+            "cerises",
+            "oeufs",
+            "farine",
+            "lait",
+            "beurre"
+        ],
+        "lists": {
+            "Principale": [
+                "600 g de cerises",
+                "5 œufs",
+                "250 g de farine",
+                "250 g de sucre",
+                "1/2 litre de lait",
+                "Quelques petits morceaux de beurre salé"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver et dénoyauter les cerises.",
+                "Dans un saladier mettre la farine, le sucre, ajouter les œufs l'un après l'autre.",
+                "Lorsque le mélange est homogène, tiédir le lait et l'incorporer doucement à la préparation.",
+                "Ajouter les cerises.",
+                "Beurrer un moule à gratin, verser la préparation dans le moule, parsemer de petits morceaux de beurre salé.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 45 minutes en surveillant la cuisson.",
+                "Se mange tiède ou froid."
+            ],
+            "Conseil": "On peut saupoudrer le far de sucre glace."
+        }
+    },
+    {
+        "id": 6,
+        "name": "PETITS GATEAUX AU CHOCOLAT",
+        "number": 6,
+        "time": 15,
+        "picture": "petitsgateauxauchocolat",
+        "ingredients": [
+            "sucre",
+            "chocolat",
+            "oeufs",
+            "farine",
+            "amandes",
+            "beurre"
+        ],
+        "lists": {
+            "Pâtes (pour 30 tartelettes de 40 mm de diamètre)": [
+                "60 g de chocolat pâtissier",
+                "2 œufs",
+                "60 g de beurre mou",
+                "50 g d'amandes",
+                "12 g de farine",
+                "60 g de sucre",
+                "1 pincée de sel"
+            ],
+            "Glaçage" : [
+                "125 g de chocolat pâtissier",
+                "60 g de beurre mou"
+            ],
+            "Décor" : [
+                "Grains de café au chocolat, cranberries, cerneaux de noix, ..."
+            ]
+        },
+        "preparations": {
+            "Pâtes": [
+                "Casser les oeufs, mettre les blancs dans un saladier, les jaunes dans un cul de poule.",
+                "Faire fondre au micro-ondes le chocolat coupé en morceaux, ajouter le beurre, mélanger.",
+                "Incorporer les jaunes, joindre les amandes, la farine, le sucre, une pincée de sel, mélanger.",
+                "Monter les blancs en neige. Mettre 1/3 des blancs d'oeufs dans la première pâte, mélanger. Verser le restant des blancs à l'aide d'une maryse en soulevant la préparation.",
+                "Beurrer des petits moules à tartelettes, les garnir au 3/4 de pâte.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 15 minutes en surveillant la préparation.",
+                "Laisser refroidir."
+            ],
+            "Glaçage" : [
+                "Dans un cul de poule mettre le chocolat cassé en morceaux, le faire fondre.",
+                "Ajouter le beurre, mélanger.",
+                "Laisser refroidir mais pas durcir.",
+                "Etaler une couche de chocolat sur chaque tartelette, les lisser.",
+                "Déposer un décor au centre exemple : un grain de café, un cranberrie ou un cerneau de noix.",
+                "Laisser refroidir."
+            ],
+            "Conseil": "peut se congeler"
+        }
+    },
+    {
+        "id": 7,
+        "name": "GÂTEAU MOELLEUX AU CHOCOLAT ET CARAMBAR",
+        "number": 12,
+        "time": 20,
+        "picture": "gateaumoelleuxauchocolatetcarambar",
+        "ingredients": [
+            "sucre",
+            "chocolat",
+            "oeufs",
+            "farine",
+            "beurre"
+        ],
+        "lists": {
+            "Principale": [
+                "4 oeufs",
+                "180 g de sucre",
+                "100 g de farine",
+                "100 g de chocolat noir en pastille",
+                "12 carambars au caramel",
+                "150 g de beurre"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Casser les pastilles de chocolat en deux, les mettre dans un bain-marie, ajouter les carambars, le beurre coupé en morceaux.",
+                "Faire fondre sur feu doux; lorsque le tout est bien fondu, retirer du feu, malaxer énergiquement la préparation qui doit être homogène.",
+                "Séparer les blancs des jaunes d'oeufs, verser le sucre sur les jaunes, les faire blanchir, incorporer la farine, mélanger.",
+                "Verser le chocolat + carambar + beurre sur les oeufs + sucre + farine, mélanger pour obtenir une pâte lisse.",
+                "Monter les blancs en neige, les intégrer à la préparation à l'aide d'une maryse.",
+                "Prendre 2 plaques en silicone, en forme de coeurs, en garnir 14 empreintes, verser un peu d'eau dans celles restantes.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 25 minutes en surveillant la cuisson, les petits coeurs doivent être moelleux.",
+                "Laisser refroidir."
+            ],
+            "Conseil": "vous pouvez vous servir d'un robot.",
+            "Rappel" : "lorsque vous n'utilisez pas toutes les empreintes d'une plaque, mettre un peu d'eau dans les empreintes non utilisées."
+        }
+    },
+    {
+        "id": 8,
+        "name": "CROQUES-FRAMBOISES AU CHOCOLAT BLANC",
+        "number": 4,
+        "time": 10,
+        "picture": "croquesframboisesauchocolatblanc",
+        "ingredients": [
+            "chocolat blanc",
+            "framboises",
+            "beurre"
+        ],
+        "lists": {
+            "Principale": [
+                "8 tranches de brioche (Nanterre)",
+                "125 g de framboises",
+                "100 g de chocolat blanc en pastilles",
+                "35 g (25 + 10)de beurre",
+                "Cassonade",
+                "1 cuillère à café de poudre de noisettes",
+                "1 cuillère à café de poudre d'amandes"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver rapidement les framboises, les sécher.",
+                "Prendre un petit bol, y mettre la poudre de noisettes, la poudre d'amandes, mélanger.",
+                "Couper les pastilles en deux, les mettre dans un récipient ajouter 25 g de beurre coupé en morceaux, faire fondre au micro-ondes.",
+                "Tartiner les tranches de brioche avec un peu de beurre, les saupoudrer légèrement de cassonade, les retourner étaler du chocolat fondu.",
+                "Déposer 1/4 des framboises sur 4 tranches de brioche au chocolat, saupoudrer les tranches des poudres noisettes + amandes.",
+                "Couvrir avec 4 tranches de brioche au chocolat vous obtenez 4 croques aux framboises.",
+                "Chauffer l'appareil à croque-monsieur, cuire les croque-framboises.",
+                "Manger chaud ou froid."
+            ],
+            "Conseil": "à manger au goûter ou en dessert."
+        }
+    },
+    {
+        "id": 9,
+        "name": "FLAN AUX PÊCHES ET SIROP D'ORGEAT",
+        "number": 6,
+        "time": 20,
+        "picture": "flanauxpechesetsiropdorgeat",
+        "ingredients": [
+            "pêches",
+            "oeufs",
+            "beurre",
+            "farine",
+            "lait",
+            "sucre"
+        ],
+        "lists": {
+            "Principale": [
+                "6 pêches",
+                "20 g de beurre",
+                "3 cuillères à soupe de sirop d'orgeat",
+                "4 oeufs",
+                "1 jaune d'oeuf",
+                "100 g de cassonade",
+                "80 g de farine",
+                "3 cuillères à soupe de crème épaisse",
+                "50 cl de lait",
+                "50 g de sucre glace",
+                "1 cuillère à soupe d'amandes effilées"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Laver les pêches, les essuyer, les couper en deux, retirer les noyaux",
+                "Prendre une poêle y mettre le beurre à fondre, déposer les pêches, les faire dorer des deux côtés.",
+                "Verser le sirop, arrêter la cuisson.",
+                "Prendre un plat, le garnir avec les demi-pêches et leur sirop (laisser en attente).",
+                "Séparer les blancs d'oeufs des jaunes.",
+                "Prendre un cul de poule, y verser 100 g de cassonade, la farine, la crème épaisse, les 5 Jaunes d'oeufs, mélanger.",
+                "Incorporer progressivement le lait en battant la préparation au fouet à main.",
+                "Battre les blancs en neige en joignant progressivement les 50 g de sucre glace dès que les blancs commencent à prendre.",
+                "Verser les blancs à la préparation précédente, les incorporer délicatement à l'aide d'une maryse.",
+                "Verser dans le plat contenant les pêches.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire 45 minutes en surveillant la cuisson (couvrir d'une feuille d'aluminium).",
+                "5 minutes avant la fin de la cuisson parsemer le plat d'amandes effilées.",
+                "Laisser refroidir."
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "name": "PÊCHES MELBA",
+        "number": 6,
+        "time": 25,
+        "picture": "pechesmelba",
+        "ingredients": [
+            "pêches",
+            "sucre"
+        ],
+        "lists": {
+            "Pêches": [
+                "6 pêches",
+                "50 cl d'eau",
+                "150 g de sucre",
+                "1/2 litre de glace à la Vanille"
+            ],
+            "Crème Chantilly" : [
+                "250 g de crème épaisse",
+                "3 cuillères à soupe de sucre",
+                "1 sachet de sucre vanillé"
+            ],
+            "Présentation" : [
+                "6 cuillères à soupe de gelée de framboises",
+                "36 baies de Cranberries"
+            ]
+        },
+        "preparations": {
+            "Pêches": [
+                "Laver les pêches, prendre une casserole, verser les 50 cl d'eau, ajouter le sucre, porter à ébullition, immerger les pêches, laisser cuire 5 minutes à petits frémissements. Les égoutter, enlever la peau, les couper en deux, retirer le noyau, réserver."
+            ],
+            "Crème Chantilly" : [
+                "Verser la crème dans un cul de poule, couvrir d'un film alimentaire, déposer au réfrigérateur pour au moins 1 heure. Après ce laps de temps, battre la crème en incorporant progressivement le sucre et le sucre vanillé."
+            ],
+            "Présentation" : [
+                "Prendre 6 coupes,1 cuillère à soupe de gelée de framboises dans chacune, ajouter 2 boules de glace à la vanille, 2 demies-pêche, recouvrir de chantilly, garnir avec 6 baies de Cranberries."
+            ],
+            "Conseil": "vous pouvez faire des coupes en mettant une demie-pêche, quelques framboises et quelques fraises."
+        }
+    },
+    {
+        "id": 11,
+        "name": "FLORENTINS AUX AMANDES",
+        "number": 10,
+        "time": 15,
+        "picture": "florentinsauxamandes",
+        "ingredients": [
+            "miel",
+            "amandes",
+            "chocolat",
+            "farine",
+            "sucre"
+        ],
+        "lists": {
+            "Principale": [
+                "18 cl de crème liquide",
+                "100 g de miel liquide",
+                "150 g de sucre semoule",
+                "200 g d'amandes éffilées",
+                "50 g d'écorce de citron confit",
+                "50 d'écorce d'orange confite",
+                "50 g de fruits confits",
+                "20 g de farine",
+                "350 g de chocolat de couverture au lait ou noir"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Couper les fruits, les écorces de citron et d'orange confits en petits morceaux.",
+                "Verser la crème liquide dans une casserole à fond épais, joindre le miel liquide, le sucre semoule, porter à ébullition en mélangeant de temps en temps à la cuillère en bois.",
+                "Incorporer les amandes effilées, les écorces de citron et d'orange confits, les fruits confits, mélanger énergiquement puis retirer la casserole du feu, ajouter la farine, l'intégrer à la préparation.",
+                "Prendre une plaque à pâtisserie recouverte d'un tapis en silicone, étaler les futurs florentins en une fine couche.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire environ 10 minutes en surveillant la cuisson.",
+                "Avant le complet refroidissement; couper les florentins en carrés d'environ 5 cm.",
+                "Hacher le chocolat, le faire fondre au bain-marie, tourner les florentins (côté lisse sur le dessus), étaler le chocolat en une couche d'environ 1 mm, laisser sécher.",
+                "Faire des vagues avant le durcissement des florentins.",
+                "Laisser sécher."
+            ],
+            "Conseil" : "vous pouvez utiliser différents fruits confits, melon, figues,..."
+        }
+    },
+    {
+        "id": 12,
+        "name": "BONBONS AU MIEL DE FORÊT",
+        "number": 4,
+        "time": 20,
+        "picture": "bonbonsaumieldeforêt",
+        "ingredients": [
+            "miel",
+            "sucre"
+        ],
+        "lists": {
+            "Principale": [
+                "250 g de sucre semoule",
+                "1 cuillère à soupe de vinaigre de miel",
+                "Eau",
+                "2 cuillères à soupe rases de miel de forêt bio"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+                "Verser 250 g de sucre semoule dans une casserole à fond épais, ajouter une cuillère à soupe de vinaigre de miel.",
+                "Humecter le sucre avec un peu d'eau, mélanger, aplatir la surface, les contours de la casserole doivent être sans sucre.",
+                "Chauffer sur feu doux sans remuer, lorsque le sucre prend (il est donc de couleur très claire), joindre 2 cuillères à soupe de miel en malaxant énergiquement,.",
+                "Continuer la cuisson 1 minute tout en mélangeant, la préparation mousse; sortir la casserole du feu, attendre que les bulles disparaissent.",
+                "Verser sur une plaque ou un marbre légèrement huilé, prendre 2 spatules et remonter l'appareil au centre, recommencer jusqu'à ce que la pâte se fige.",
+                "Prendre la pâte dans les mains; l'étirer en un long ruban confectionner des petits bonbons en coupant avec des ciseaux ou à la main.",
+                "Garder ces bonbons dans des boîtes hermétiques."
+            ],
+            "Conseil" : "la pâte refroidit vite et n'est donc plus mallèable : vous pouvez la faire réchauffer dans un four tiède. Ces bonbons calment les irritations de la gorge."
+        }
+    },
+    {
+        "id": 13,
+        "name": "AMANDES AU CHOCOLAT BLANC",
+        "number": 8,
+        "time": 20,
+        "picture": "amandeschocolatblanc",
+        "ingredients": [
+            "miel",
+            "sucre",
+            "amandes",
+            "beurre",
+            "chocolat blanc"
+        ],
+        "lists": {
+            "Principale": [
+                "75 g de sucre en poudre",
+                "1 cuillère à soupe de miel",
+                "300 g d'amandes blanches entières",
+                "2 cuillères à café de beurre",
+                "150 g de chocolat blanc"
+            ]
+        },
+        "preparations": {
+            "Principale": [
+               "Dans une casserole, mettre 3 cuillères à soupe d'eau, le sucre, le miel.",
+                "Verser ce mélange sur les amandes, bien mélanger afin de les enrober.",
+                "Sur une plaque à four recouverte de papier sulfurisé déposer les amandes.",
+                "Préchauffer le four 15 minutes à 180°C, Th 6.",
+                "Cuire pendant 20 minutes en surveillant la caramélisation.",
+                "Les amandes doivent être caramélisées dorées mais pas marron.",
+                "Sortir du four, ajouter le beurre, mélanger et laisser refroidir.",
+                "Dans un bain-marie mettre le chocolat cassé en morceaux, le faire fondre.",  
+                "Lorsque les amandes sont froides les mélanger au chocolat fondu.",
+                "Déposer les amandes sur une feuille guitare et les laisser sécher."
+            ],
+            "Conseil" : "pour les conserver, les mettre dans une boîte hermétique. Vous pouvez utiliser du papier sulfurisé à la place de la feuille guitare"
+        }
+    }
+]
