@@ -1,11 +1,11 @@
 /*Création des objets reccettes à partir du JSON*/
-var tabRecettes = [];
-recettes.forEach((recette) => {
-    tabRecettes.push(new Recipe(recette));
+var arrayRepices = [];
+repices.forEach((repice) => {
+    arrayRepices.push(new Recipe(repice));
 });
 
 /*Création des cartes ingredients*/
-var listeIngredients = [
+var listIngredients = [
     "Noix de coco",
     "Kiwis",
     "Oranges",
@@ -25,9 +25,7 @@ var listeIngredients = [
     "Sucre",
     "Pommes",
 ];
-var tabIngredients = [];
-listeIngredients.forEach((ingredient) => {
-    tabIngredients.push(new Ingredient(ingredient));
+var arrayCards = [];
+listIngredients.forEach((ingredient) => {
+    arrayCards.push(new Card(ingredient));
 });
-
-/*console.log(array1.filter(e => array2.includes(e)));*/

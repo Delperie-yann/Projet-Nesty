@@ -1,31 +1,37 @@
 /*Les objets Reccette et ingredient*/
 class Recipe {
-    constructor(recette) {
-        this.nom = recette.nom;
-        this.nombre = recette.nombre;
-        this.temps = recette.temps;
-        this.image = recette.image;
-        this.ingredients = recette.ingredients;
-        this.listes = recette.listes;
-        this.preparations = recette.preparations;
-        this.valide = false;
+    constructor(repice) {
+        this.name = repice.name;
+        this.id = repice.id;
+        this.number = repice.number;
+        this.time = repice.time;
+        this.picture = repice.picture;
+        this.ingredients = repice.ingredients;
+        this.lists = repice.lists;
+        this.preparations = repice.preparations;
+        this.valid = false;
     }
     validRecipe(ingredients) {
-        let tabCommun = ingredients.filter((e) => this.ingredients.includes(e));
-        if (tabCommun.length == ingredients.length) {
-            this.valide = true;
+        this.valid = false;
+        if (ingredients.length > 0) {
+            let arrayCommun = ingredients.filter((e) =>
+                this.ingredients.includes(e)
+            );
+            if (arrayCommun.length == ingredients.length) {
+                this.valid = true;
+            }
         }
     }
 }
 
-class Ingredient {
+class Card {
     constructor(ingredient) {
-        this.nom = ingredient;
-        this.image = this.checkWriting(ingredient);
-        this.valide = false;
+        this.name = ingredient;
+        this.picture = this.checkWriting(ingredient);
+        this.valid = false;
     }
     changeValid(value) {
-        this.valide = value;
+        this.valid = value;
     }
     checkWriting(text) {
         var text = text.toLowerCase().replace(/ /g, "");
