@@ -1,16 +1,17 @@
-var posRotate = [
-    "md:rotate-6",
-    "md:rotate-12",
-    "md:-rotate-6",
-    "md:-rotate-12",
-];
-var posRotateCard = [
-    "md:rotate-1",
-    "md:rotate-2",
-    "md:-rotate-1",
-    "md:-rotate-2",
-];
+var posRotateCard = ["rotate-1", "rotate-2", "-rotate-1", "-rotate-2"];
+let widthtWindow = viewportSize().width;
+if (widthtWindow < 550) {
+    var posRotate = posRotateCard;
+    var move = 500;
+} else {
+    var posRotate = ["rotate-6", "rotate-12", "-rotate-6", "-rotate-12"];
+    var move = 650;
+}
+
 var posCard = 0;
+
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 
 var cards = document.querySelectorAll(".cards");
 var cardsI = document.querySelector(".cardsI");
@@ -26,7 +27,7 @@ var imgUp = document.querySelector(".imgUp");
 
 //positionnement des cartes superposées
 for (let i = 0; i < cards.length; i++) {
-    cards[i].style.zIndex = i + 1;
+    cards[i].style.zIndex = i + 2;
 }
 cardsI.style.zIndex = 10;
 
@@ -39,7 +40,7 @@ keep.addEventListener("click", function () {
     if (posCard == arrayCards.length) {
         posCard = 0;
     }
-    moveCard("+");
+    moveCard("+", move);
     recipeDisplay();
 });
 
@@ -49,6 +50,9 @@ sweep.addEventListener("click", function () {
     if (posCard == arrayCards.length) {
         posCard = 0;
     }
-    moveCard("-");
+    moveCard("-", move);
     recipeDisplay();
 });
+
+randomize(arrayRepices);
+recipeDisplay();
