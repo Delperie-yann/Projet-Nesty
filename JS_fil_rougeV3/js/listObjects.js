@@ -2,7 +2,8 @@
 class Recipe {
     constructor(repice) {
         this.name = repice.name;
-        this.number = repice.id;
+        this.id = repice.id;
+        this.number = repice.number;
         this.time = repice.time;
         this.picture = repice.picture;
         this.ingredients = repice.ingredients;

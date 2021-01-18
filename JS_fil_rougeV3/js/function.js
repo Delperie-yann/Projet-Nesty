@@ -139,7 +139,7 @@ function recipeDisplay() {
             "<div class='tooltip " +
             divClass +
             " divsRepice' id='" +
-            arrayRepices[repice].number +
+            arrayRepices[repice].id +
             "'><img class='rounded " +
             imgClass +
             "' alt='" +
@@ -164,42 +164,72 @@ function openModal(id) {
     var repiceModal = document.querySelector(".modal");
     let div = "";
     for (var repice in arrayRepices) {
-        if (arrayRepices[repice].number == id) {
+        if (arrayRepices[repice].id == id) {
             repiceModal = arrayRepices[repice];
-            div1 = '<div class="modal-content">'
-            div2 = '<span class="close" >x</span>'
-            div3 = '<p class= "modal-name">Nom de la recette : ' + repiceModal.name + '</p>'
-            div4 = '<p class= "modal-number">Pour ' + repiceModal.number + " personnes" + '</p>'
-            div5 = '<p class= "modal-time">Durée : "' + repiceModal.time + '</p>'
-            div6 = '<p class= "modal-picture"><img class="center"+ ' + repiceModal.name + " src ='./images/recettes/" + repiceModal.picture +".jpg'/></p>"
-           
-            var s = repiceModal.lists;
-
-            for (var j = 0; j < s.length; j++) {  
-                for (var i = 0; i < s.length; j++) { 
-             var prep = repiceModal.lists[j];
-                }
-            }
-            var prep2 =repiceModal.preparations[j];
-            div7 = '<p class= "modal-lists">' + prep+ '</p>'
-            div8 = '<p class= "modal-preparations">' + prep2 + '</p>'
-            div9 = '<p class= "modal-Conseil"> Conseil pour un petit plus : ' + repiceModal.preparations.Conseil + '</p>' + '</div>';
-        
-            modal.style.display = "block";
-            modal.innerHTML = div1 + div2 + div3 + div4 + div5 + div6 + div7 + div8 + div9;
         }
     }
+   
+    div += '<div class="modal-content">'
+    div += '<span class="close">&times;</span>'
+    div += '<p class= "modal-name">Nom de la recette : ' + repiceModal.name + '</p>'
+    div += '<p class= "modal-number">Pour ' + repiceModal.number + " personnes" + '</p>'
+    div += '<p class= "modal-time">Durée : ' + repiceModal.time + ' min</p>'
+    div += '<p class= "modal-picture"><img class="center"+ ' + repiceModal.name + " src ='./images/recettes/" + repiceModal.picture + ".jpg'/></p>"
 
-    console.log(repiceModal);
-    
-    console.log(div);
-    span.onclick = function () {
+    var ensembles = repiceModal.lists;
+    for (var list in ensembles) {
+        if (list != "Principale") {
+         
+            div += '<ul><li>' + list + '</li></ul>';
+        }else {
+              // trouver comment remplacer le nom de "principale"
+           
+            
+            div += '<ul><li>' + list + '</li></ul>';
+        }
+        for (var j = 0; j < ensembles[list].length; j++) {
+            div += '<li>' + ensembles[list][j] + '</li>'
+        }
+    }
+    var ensembleP = repiceModal.preparations;
+    for (var list in ensembleP) {
+        if (list != "Principale") {
+            div += '<ul>' + list + '</ul>';
+        } else {
+            // trouver comment remplacer le nom de "principale"
+            div += '<ul>' + list + '</ul>';
+        }
+        for (var j = 0; j < ensembleP[list].length; j++) {
+            if (list != "Conseil") {
+                    div += '<li>' + ensembleP[list][j] + '</li>';   
+            }
+        }     
+    } div += '<li>' + ensembleP.Conseil + '</li>';
+
+
+
+
+    modal.style.display = "block";
+    modal.innerHTML = div;
+
+
+
+    //console.log(repiceModal);
+
+    var close = document.querySelector(".close");
+    close.onclick = function () {
         modal.style.display = "none";
+
     };
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     };
+    var close = document.querySelector(".modal");
+    modal.onclick = function (event) {
+        modal.style.display = "none";
 
+    };
 }
+

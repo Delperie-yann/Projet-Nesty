@@ -87,7 +87,7 @@ var repices = [
                 "Laisser refroidir, couvrir le récipient, l'entreposer au réfrigérateur au moins 2 heures.",
                 "Après ce laps de temps; battre la crème au fouet électrique."
             ],
-            "Montage ": "A l'aide d'un emporte-pièce en forme de coeur, creuser chaque coeur, remplir les cavités de crème au chocolat blanc.",
+            
             "Conseil": "ces petits coeurs sont très légers"
         }
     },
@@ -133,7 +133,7 @@ var repices = [
                 "Déposer le beurre coupé en morceaux dans une casserole,le faire fondre sur feu moyen, verser le sucre en mélangeant énergiquement, cuire environ 5 minutes.",
                 "Arrêter la cuisson, verser la crème (progressivement) en battant la préparation, la crème va épaissir tout en restant fluide, remettre sur le feu 3 minutes sans cesser de battre le mélange."
             ],
-            "Montage ": "Au moment de servir : prendre une assiète, y déposer une crêpe, la garnir de quelques tranches de pomme, déposer 1 à 2 cuillères soupe de sauce et plier la crêpe. Tous les ingédients doivent être chauds ou tièdes",
+            
             "Conseil": "maintenir les ingrédients au chaud, chaque convive se servira selon son goût, vous pouvez servir ces crêpes avec du sorbet aux pommes (à la place, ou en lieu et place de la sauce)."
         }
     },
@@ -288,8 +288,8 @@ var repices = [
                 "Cuire 25 minutes en surveillant la cuisson, les petits coeurs doivent être moelleux.",
                 "Laisser refroidir."
             ],
-            "Conseil": "vous pouvez vous servir d'un robot.",
-            "Rappel" : "lorsque vous n'utilisez pas toutes les empreintes d'une plaque, mettre un peu d'eau dans les empreintes non utilisées."
+           
+             "Conseil": "vous pouvez vous servir d'un robot."
         }
     },
     {
