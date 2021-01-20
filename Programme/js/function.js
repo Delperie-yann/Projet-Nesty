@@ -1,4 +1,4 @@
-//Créer un tableau des ingrédients validés par l'user
+//Create a table of user-validated ingredients
 function countCard() {
     let arrayCardValid = [];
     arrayCards.forEach((ingredient) => {
@@ -9,7 +9,7 @@ function countCard() {
     return arrayCardValid;
 }
 
-//valide les recettes par rapport aux choix des ingrédients de l'utilisateur
+//Validates recipes against the user's choice of ingredients
 function searchRecipe() {
     var cards = countCard();
     for (var repice in arrayRepices) {
@@ -17,7 +17,7 @@ function searchRecipe() {
     }
 }
 
-//mélanger un tableau
+//Mixing a painting
 function randomize(array) {
     var i, j, tmp;
     for (i = array.length - 1; i > 0; i--) {
@@ -29,7 +29,7 @@ function randomize(array) {
     return array;
 }
 
-// détection taille écran utilisateur
+// user screen size detection
 function viewportSize() {
     var d = document.documentElement;
     return {
@@ -38,7 +38,7 @@ function viewportSize() {
     };
 }
 
-//positionnement des 2 cartes visibles
+//Positioning of the 2 visible cards
 function possitionCard(pos) {
     let heightWindow = viewportSize().height;
     let widthtWindow = viewportSize().width;
@@ -73,7 +73,7 @@ function possitionCard(pos) {
         "./images/ingredients/" + arrayCards[pos].picture + ".jpg"
     );
 
-    // diminuer la taille des images sur les écrans moins long pour éviter trop de scrolling
+    // Decrease the size of images on shorter screens to avoid too much scrolling
 
     if ((heightWindow < 900) & (widthtWindow > 550)) {
         imgBelow.setAttribute("height", "300px");
@@ -88,7 +88,7 @@ function possitionCard(pos) {
     }
 }
 
-//mouvement des cartes
+//Moving card
 function moveCard(way, move) {
     posRotate = randomize(posRotate);
     posRotateCard = randomize(posRotateCard);
@@ -120,6 +120,7 @@ function moveCard(way, move) {
     };
 }
 
+//Creates the recipe grid
 function recipeDisplay() {
     let repiceDiv = document.querySelector(".repice");
     let html = "";
@@ -159,77 +160,78 @@ function recipeDisplay() {
         });
     }
 }
-
+// Creates a modal and its content for each card
 function openModal(id) {
     var repiceModal = document.querySelector(".modal");
     let div = "";
     for (var repice in arrayRepices) {
         if (arrayRepices[repice].id == id) {
             repiceModal = arrayRepices[repice];
+            break;
         }
     }
-   
-    div += '<div class="modal-content">'
-    div += '<span class="close">&times;</span>'
-    div += '<p class= "modal-name">Nom de la recette : ' + repiceModal.name + '</p>'
-    div += '<p class= "modal-number">Pour ' + repiceModal.number + " personnes" + '</p>'
-    div += '<p class= "modal-time">Durée : ' + repiceModal.time + ' min</p>'
-    div += '<p class= "modal-picture"><img class="center"+ ' + repiceModal.name + " src ='./images/recettes/" + repiceModal.picture + ".jpg'/></p>"
+    if (repiceModal.valid) {
+        div += '<div class="modal-content">';
+        div += '<span class="close">&times;</span>';
+        div += '<p class= "modal-name">' + repiceModal.name + "</p>";
+        div +=
+            '<p class= "modal-number">Pour ' +
+            repiceModal.number +
+            " personnes" +
+            "</p>";
+        div +=
+            '<p class= "modal-time">Durée : ' + repiceModal.time + " min</p>";
+        div +=
+            '<p class= "modal-picture"><img class="center"+ ' +
+            repiceModal.name +
+            " src ='./images/recettes/" +
+            repiceModal.picture +
+            ".jpg'/></p>";
 
-    var ensembles = repiceModal.lists;
-    for (var list in ensembles) {
-        if (list != "Principale") {
-         
-            div += '<ul><li>' + list + '</li></ul>';
-        }else {
-              // trouver comment remplacer le nom de "principale"
-           
-            
-            div += '<ul><li>' + list + '</li></ul>';
-        }
-        for (var j = 0; j < ensembles[list].length; j++) {
-            div += '<li>' + ensembles[list][j] + '</li>'
-        }
-    }
-    var ensembleP = repiceModal.preparations;
-    for (var list in ensembleP) {
-        if (list != "Principale") {
-            div += '<ul>' + list + '</ul>';
-        } else {
-            // trouver comment remplacer le nom de "principale"
-            div += '<ul>' + list + '</ul>';
-        }
-        for (var j = 0; j < ensembleP[list].length; j++) {
-            if (list != "Conseil") {
-                    div += '<li>' + ensembleP[list][j] + '</li>';   
+        var global = repiceModal.lists;
+        for (var list in global) {
+            if (list != "Principale") {
+                div += "<ul><li>" + list + "</li></ul>";
+            } else {
+                /*Force the name change*/
+                div += "<ul><li>Ingredient</li></ul>";
             }
-        }     
-    } div += '<li>' + ensembleP.Conseil + '</li>';
-
-
-
-
-    modal.style.display = "block";
-    modal.innerHTML = div;
-
-
-
-    //console.log(repiceModal);
-
-    var close = document.querySelector(".close");
-    close.onclick = function () {
-        modal.style.display = "none";
-
-    };
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+            for (var j = 0; j < global[list].length; j++) {
+                div += "<li>" + global[list][j] + "</li>";
+            }
         }
-    };
-    var close = document.querySelector(".modal");
-    modal.onclick = function (event) {
-        modal.style.display = "none";
+        var globalP = repiceModal.preparations;
+        for (var list in globalP) {
+            if (list != "Principale") {
+                div += "<ul>" + list + "</ul>";
+            } else {
+                /*Force the name change*/
+                div += "<ul>Recette</ul>";
+            }
+            for (var j = 0; j < globalP[list].length; j++) {
+                if (list != "Conseil") {
+                    div += "<li>" + globalP[list][j] + "</li>";
+                }
+            }
+        }
+        div += "<li>" + globalP.Conseil + "</li>";
 
-    };
+        modal.style.display = "block";
+        modal.innerHTML = div;
+
+        //Click condition on the modal
+        var close = document.querySelector(".close");
+        close.onclick = function () {
+            modal.style.display = "none";
+        };
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+        var close = document.querySelector(".modal");
+        modal.onclick = function (event) {
+            modal.style.display = "none";
+        };
+    }
 }
-
