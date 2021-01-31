@@ -1,8 +1,11 @@
 >Projet-Nesty
 >Réaliser en JavaScript
 
-![coursJavaScript](https://delperie.needemand.com/images/Presentation.jpg)
 
+<p align="center">
+  <img src="https://delperie.needemand.com/images/Presentation.jpg" width="350" title="coursJavaScript">
+ 
+</p>
 
 
 >>Projet fil rouge partie 1
