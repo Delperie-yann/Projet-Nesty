@@ -25,7 +25,7 @@ var imgBelow = document.querySelector(".imgBelow");
 var textUp = document.querySelector(".textUp");
 var imgUp = document.querySelector(".imgUp");
 
-//positionnement des cartes superposées
+//Positioning of the superimposed cards
 for (let i = 0; i < cards.length; i++) {
     cards[i].style.zIndex = i + 2;
 }
