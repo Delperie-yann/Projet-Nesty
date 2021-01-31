@@ -1,10 +1,10 @@
-/*Création des objets reccettes à partir du JSON*/
+/*Creating Recipe Objects from JSON*/
 var arrayRepices = [];
 repices.forEach((repice) => {
     arrayRepices.push(new Recipe(repice));
 });
 
-/*Création des cartes ingredients*/
+/*Creation of ingredient cards*/
 var listIngredients = [
     "Noix de coco",
     "Kiwis",

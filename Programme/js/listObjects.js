@@ -1,4 +1,4 @@
-/*Les objets Reccette et ingredient*/
+/*Recipe and ingredient items*/
 class Recipe {
     constructor(repice) {
         this.name = repice.name;
