@@ -165,6 +165,7 @@ function openModal(id) {
     var repiceModal = document.querySelector(".modal");
     let div = "";
     for (var repice in arrayRepices) {
+
         if (arrayRepices[repice].id == id) {
             repiceModal = arrayRepices[repice];
             break;
