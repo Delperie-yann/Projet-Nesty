@@ -172,50 +172,58 @@ function openModal(id) {
         }
     }
     if (repiceModal.valid) {
-        div += '<div class="modal-content">'
-        div += '<span class="close">&times;</span>'
-        div += '<p class= "modal-name">Nom de la recette : ' + repiceModal.name + '</p>'
-        div += '<p class= "modal-number">Pour ' + repiceModal.number + " personnes" + '</p>'
-        div += '<p class= "modal-time">Durée : ' + repiceModal.time + ' min</p>'
-        div += '<p class= "modal-picture"><img class="center"+ ' + repiceModal.name + " src ='./images/recettes/" + repiceModal.picture + ".jpg'/></p>"
+        div += '<div class="modal-content">';
+        div += '<span class="close">&times;</span>';
+        div += '<p class= "modal-name">' + repiceModal.name + "</p>";
+        div +=
+            '<p class= "modal-number">Pour ' +
+            repiceModal.number +
+            " personnes" +
+            "</p>";
+        div +=
+            '<p class= "modal-time">Durée : ' + repiceModal.time + " min</p>";
+        div +=
+            '<p class= "modal-picture"><img class="center"+ ' +
+            repiceModal.name +
+            " src ='./images/recettes/" +
+            repiceModal.picture +
+            ".jpg'/></p>";
 
         var global = repiceModal.lists;
         for (var list in global) {
             if (list != "Principale") {
-                div += '<ul><li>' + list + '</li></ul>';
+                div += "<ul><li>" + list + "</li></ul>";
             } else {
                 /*Force the name change*/
-                div += '<ul><li>Ingredient</li></ul>';
+                div += "<ul><li>Ingredient</li></ul>";
             }
             for (var j = 0; j < global[list].length; j++) {
-                div += '<li>' + global[list][j] + '</li>'
+                div += "<li>" + global[list][j] + "</li>";
             }
         }
         var globalP = repiceModal.preparations;
         for (var list in globalP) {
             if (list != "Principale") {
-                div += '<ul>' + list + '</ul>';
+                div += "<ul>" + list + "</ul>";
             } else {
                 /*Force the name change*/
-                div += '<ul>Recette</ul>';
+                div += "<ul>Recette</ul>";
             }
             for (var j = 0; j < globalP[list].length; j++) {
                 if (list != "Conseil") {
-                    div += '<li>' + globalP[list][j] + '</li>';
+                    div += "<li>" + globalP[list][j] + "</li>";
                 }
             }
         }
-        div += '<li>' + globalP.Conseil + '</li>';
+        div += "<li>" + globalP.Conseil + "</li>";
+
         modal.style.display = "block";
         modal.innerHTML = div;
-
-
 
         //Click condition on the modal
         var close = document.querySelector(".close");
         close.onclick = function () {
             modal.style.display = "none";
-
         };
         window.onclick = function (event) {
             if (event.target == modal) {
@@ -225,8 +233,6 @@ function openModal(id) {
         var close = document.querySelector(".modal");
         modal.onclick = function (event) {
             modal.style.display = "none";
-
         };
     }
 }
-
