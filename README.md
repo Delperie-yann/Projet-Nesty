@@ -8,6 +8,7 @@
 </p>
 
 
->>Projet fil rouge partie 1
+<h1>Projet fil</h1>
+<h2>rouge partie 1</h2>
 >Composant développé en Javascript
 L’entreprise Nesti souhaite se diversifier, envisage un grand projet appelé, projet Fil Rouge.Mais avant de s’engager avec vous, l’entreprise souhaite un échantillon de votre travail et devotre professionnalisme.Pour cela, L’entreprise Nesti vous propose de développer un composant JS qui devra êtreintégrable dans un plus grand projet.
